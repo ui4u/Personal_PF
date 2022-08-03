@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8"> 
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portifolio</title>  
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/db42fbe647.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/firstp.jpg" class="firstp">
+              <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1><span>Chaitanya Boppana</span></h1>
+          </div>
+        </div>
+    
+       </div> 
+       <div id="about">
+       <div class="container">
+        <div class="row">
+      <div class="about-col-1">
+        <img src="images/photo44.jpg" class="photo44" alt="photo44">
+             </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+      <p class="message"><span style="color:rgb(241, 83, 110);font-weight:bold">"It's more than building something. It's delivering an experience."</span><br>
+
+       <i><span style="color:rgb(92, 207, 169);font-weight:italics;font-size-adjust: calc();">I specialize in front-end web development, carefully crafting and preserving design integrity, and delivering on the promise of interactivity and user experience. Building highly Interactive UI, design systems, rapid prototyping, and delivery of design concepts. I am also interested in building design tools, serverless architecture, and automation.
+        
+          As a technical designer, I am focused on how we can leverage technology to deliver amazing experiences (I believe that technical innovation comes from pursuing experiential goals)
+          I love working with clients directly, or as part of a larger team to create new solutions. I've been a part of some incredible projects and I approach each one as an opportunity to learn something new. 
+          
+          My ability to adapt, work under deadlines or constant pressure, and - most importantly - communicate effectively, stems from my experience.
+          <br>
+          <u>Core languages</u> : HTML5, CSS3, JavaScript (ES6), Sass, Git, SVN <br>
+          
+          <u>Actively exploring</u>: Angular, React, Vue, Node </span><br>
+          
+          <span style="color:rgb(241, 83, 110);font-weight:bold">Always open to discussing new technologies and practices.</span></i></p>
+       
+          <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Frontend Developer/UI</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Web app development</li>
+            <li><span>App Development</span><br>Building Android/iOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Freelancing</span><br>Helps me Initially to Build skills and improve My career</li>
+            <li><span>Passion</span><br>Extremely passionate about startups, but works full-time as Frontend Developer for a major global corporation</li>
+            <li><span>FullTime</span><br>My Passion and with a lot of flexibility and Ample of experience drives me in transition into FullTime consultant</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Training</span><br>UI Developer Training at Mangnus Training Institute</li>
+            <li><span>Bachelor Degree</span><br>Bachelor of Computer Applications</li>
+            <li><span>Practice</span><br>“practice makes perfect” comes into play. If I end up making mistakes, No worries. Sometimes we learn more from our errors than we do from a flawless performance.</li>
+          </ul>
+        </div>
+        </div>
+    </div>
+   </div>
+  </div>
+
+  <!---------------SERVICES-------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+        <h2>Frontend Development</h2>
+        <P>converting data to a graphical interface, through the use of programming languages, 
+          so that users can view and interact with that data. 
+          The front-end is the part of a website or web app that a user interacts with. All you can see,
+           from fonts and colors to dropdown menus and sliders,
+            refers to front-end development. Front-end developer is a mediator between a designer 
+            and a back-end developer responsible for the best possible user experience.</P>
+            <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>Web Development</h2>
+          <P>We provide a full range of custom web application development services starting from business analysis,
+             UI/UX design, to front-end and back-end development, QA testing, maintenance and support.</P>
+              <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+              <P>we have been intensively working on the creation of mobile applications for iOS, 
+                Android, Windows Phone - and utilizing different technologies and frameworks for their realization 
+                 Our well-organized teamwork and deep understanding of customer requirements enables us to develop top notch mobile solutions on time and on budget.</P>
+                  <a href="#">Learn more</a>
+                  </div>
+    </div>
+  </div>
+            </div>
+           
+            
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+</body>
+</html>
+
